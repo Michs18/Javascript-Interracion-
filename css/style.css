@@ -1,0 +1,157 @@
+.contenedor{
+    width: 60%;
+    min-height: 400px;
+    margin: 50px auto;
+    display: flex;
+    border: 4px solid #740c74;
+}
+
+.contenedor .izquierdo{
+    background: #ffffff;
+    width: 50%;
+   text-align: center;
+
+}
+
+.contenedor .derecha{
+    background: #740c74;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+.izquierdo h2 {
+    color: #740c74;
+
+}
+
+.derecha h2 {
+    color: #e6edf0;
+}
+
+.derecha #figura{
+    width: 180px;
+    height: 180px;
+    margin: 30px auto;
+    background: #ffffff;
+    transition: 1s;
+}
+
+.izquierdo button {
+    border: 2px solid #ca0879;
+    background: rgb(255, 255, 255);
+    color: rgb(110, 8, 97);
+    padding: 8px 24px;
+    font-size: 20px;
+    margin: 10px;
+    transition: .4s;
+}
+
+.izquierdo button:hover{
+border-radius: 12px 0 12px 0;
+background: #740c74;
+color:#ffffff;
+
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg);
+    transition: 1s;
+    background: #af09fc;
+}
+
+#figura.rombo{
+    border-style: 50%;
+    transform: rotate(45deg);
+    transition: 1s;
+    background: #7a0bad;
+}
+
+#figura.triangulo{
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid #740c74;
+    border-top: 100px solid #740c74;
+    border-left: 100px solid #740c74;
+    border-bottom: 150px solid #ffffff; 
+   
+    transition: 2s;
+}
+
+#figura.diagonaliz{
+
+    transform: translate(-100px, -100px);
+    transition: 1s;
+    background:#a50d91;
+    border: 4px solid #000000; 
+  }
+
+#figura.diagonalinf{
+    transform: translate(100px, 100px);
+    transition: 1s;
+    background:#b347aa;
+    border: 4px solid #000000; 
+}
+#figura.Top{
+    transform: translateY(-100px);
+    transition: 1s;
+    background: #bd49e025;
+    border:4px solid #000000;
+}
+
+#figura.Left{
+    transform: translateX(-100px);
+    transition: 1s;
+    background: #e016d6de;
+    border:4px solid #000000; 
+}
+
+#figura.bottom{
+    transform: translateY(100px);
+    transition:1s;
+    background:#be5cd6;
+    border: 4px solid #000000;
+}
+
+#figura.right{
+    transform: translateX(100px);
+    transition: 1s;
+    background: #9567e9;
+    border:4px solid #050505;
+}
+
+#gif{
+    transition: 2s;
+    display: none;
+}
+
+#figura.girar{
+    transform:perspective(-360px);
+    transition:1s;
+    background: #240122de;
+    border:4px solid #000000; 
+}
+
+
+
+#figura.trapecio{
+        height: 0;
+        width: 150px;
+        border-bottom: 150px solid rgb(235, 15, 143);
+        border-left: 100px solid #740c74;
+        border-right: 100px solid #740c74;
+}
+
+#figura.colorchart {
+    width:0px;
+    height: 0px;
+    border-right: 100px solid #db0e0e;
+    border-top: 100px solid #96084f;
+    border-left: 100px solid #f37019;
+    border-bottom: 100px solid #eedf0e;
+    -moz-border-radius: 200%;
+    -webkit-border-radius: 200%;
+    border-radius: 200%;
+}
